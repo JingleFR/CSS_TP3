@@ -188,6 +188,9 @@ header {
   letter-spacing: 1px;
   cursor: pointer;
 }
+.right-part i {
+  transform: translateX(10px);
+}
 .right-part button:hover {
   background: black;
   color: whitesmoke;
@@ -197,6 +200,7 @@ header {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 .main-news-container div {
   width: 25%;
@@ -212,6 +216,7 @@ header {
 }
 .main-news-container div p {
   font-size: 0.8rem;
+  margin-bottom: 45px;
 }
 .link {
   min-width: 130px;
@@ -219,9 +224,17 @@ header {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
 }
 .main-news-container .link a {
   display: block;
+}
+.main-news a:hover {
+  color: rgb(180, 180, 1);
+}
+.main-news i {
+  transform: translateX(5px);
 }
 .contact-container {
   margin: 60px 0;
@@ -232,6 +245,15 @@ header {
   margin: 0 auto;
   width: 80%;
   margin-bottom: 60px;
+  position: relative;
+}
+.contact-list::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: rgb(209, 209, 209);
+  bottom: -40px;
 }
 .list {
   width: 20%;
